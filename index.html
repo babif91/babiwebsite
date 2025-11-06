@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Babi Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   <!-- Hamburger menu -->
+  <div class="hamburger" id="hamburger">&#9776;</div>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+    <!-- Video Banner -->
+    <video autoplay muted loop playsinline class="video">
+      <source src="design/bannerstyle.mp4" type="video/mp4" media="(min-width: 801px)">
+      <source src="design/babibannermobilee.mp4" type="video/mp4" media="(max-width: 412px)">
+      Your browser does not support the video tag.
+    </video>
+
+     <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

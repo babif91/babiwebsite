@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Hamburger menu -->
+  <div class="hamburger" id="hamburger">&#9776;</div>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <!-- Banner image wrapper -->
+  <div class="banner-wrapper">
+    <img src="design/bodybabi.png" alt="About Us Banner" class="banner-image desktop-image">
+      <img src="design/background.png" alt="About Us Banner" class="banner-image mobile-image">
+    <!-- Overlay content -->
+    <div class="about-content">
+      <h1>Contact Us</h1>
+      <p>exempleemail@email.com</p>
+    </div>
+  </div>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
